@@ -1,0 +1,777 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.simats.aquago"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="34"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:4:5-66
+11-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:5:5-78
+12-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:6:5-80
+13-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:6:22-78
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:7:5-64
+14-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:7:22-62
+15    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+15-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:8:5-75
+15-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:8:22-73
+16    <uses-permission
+16-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:9:5-106
+17        android:name="android.permission.READ_EXTERNAL_STORAGE"
+17-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:9:22-77
+18        android:maxSdkVersion="32" />
+18-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:9:78-104
+19    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+19-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:10:5-76
+19-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:10:22-74
+20
+21    <uses-feature
+21-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:12:5-84
+22        android:name="android.hardware.camera"
+22-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:12:19-57
+23        android:required="false" />
+23-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:12:58-82
+24
+25    <!-- Required for Android 11+ to detect UPI apps -->
+26    <queries>
+26-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:15:5-20:15
+27        <intent>
+27-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:16:9-19:18
+28            <action android:name="android.intent.action.VIEW" />
+28-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:13-65
+28-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:21-62
+29
+30            <data android:scheme="upi" />
+30-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:13-42
+30-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:19-39
+31        </intent>
+32        <intent>
+32-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:11:9-17:18
+33            <action android:name="android.intent.action.VIEW" />
+33-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:13-65
+33-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:21-62
+34
+35            <data
+35-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:13-42
+36                android:mimeType="*/*"
+37                android:scheme="*" />
+37-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:19-39
+38        </intent>
+39        <intent>
+39-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:18:9-27:18
+40            <action android:name="android.intent.action.VIEW" />
+40-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:13-65
+40-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:21-62
+41
+42            <category android:name="android.intent.category.BROWSABLE" />
+42-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:21:13-74
+42-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:21:23-71
+43
+44            <data
+44-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:13-42
+45                android:host="pay"
+46                android:mimeType="*/*"
+47                android:scheme="upi" />
+47-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:19-39
+48        </intent>
+49        <intent>
+49-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:28:9-30:18
+50            <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:84:17-69
+50-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:84:25-66
+51        </intent>
+52        <intent>
+52-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:31:9-35:18
+53            <action android:name="android.intent.action.SEND" />
+53-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:32:13-65
+53-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:32:21-62
+54
+55            <data android:mimeType="*/*" />
+55-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:13-42
+56        </intent>
+57        <intent>
+57-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:36:9-38:18
+58            <action android:name="rzp.device_token.share" />
+58-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:37:13-61
+58-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:37:21-58
+59        </intent>
+60    </queries>
+61
+62    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+62-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:22:5-79
+62-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:22:22-76
+63    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+63-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:24:5-68
+63-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:24:22-65
+64    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+64-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:26:5-82
+64-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:26:22-79
+65
+66    <uses-feature
+66-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\45055f453db46467c807f28e62249368\transformed\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+67        android:glEsVersion="0x00020000"
+67-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\45055f453db46467c807f28e62249368\transformed\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+68        android:required="true" />
+68-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\45055f453db46467c807f28e62249368\transformed\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+69
+70    <permission
+70-->[androidx.core:core:1.13.0] C:\Users\chant\.gradle\caches\8.13\transforms\83c6e2b54551a86df774f46d4dfb0621\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+71        android:name="com.simats.aquago.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+71-->[androidx.core:core:1.13.0] C:\Users\chant\.gradle\caches\8.13\transforms\83c6e2b54551a86df774f46d4dfb0621\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+72        android:protectionLevel="signature" />
+72-->[androidx.core:core:1.13.0] C:\Users\chant\.gradle\caches\8.13\transforms\83c6e2b54551a86df774f46d4dfb0621\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+73
+74    <uses-permission android:name="com.simats.aquago.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+74-->[androidx.core:core:1.13.0] C:\Users\chant\.gradle\caches\8.13\transforms\83c6e2b54551a86df774f46d4dfb0621\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+74-->[androidx.core:core:1.13.0] C:\Users\chant\.gradle\caches\8.13\transforms\83c6e2b54551a86df774f46d4dfb0621\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+75
+76    <supports-screens
+76-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:9:5-12:40
+77        android:anyDensity="true"
+77-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:10:9-34
+78        android:largeScreens="true"
+78-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:11:9-36
+79        android:normalScreens="true" />
+79-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:12:9-37
+80
+81    <uses-feature
+81-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:14:5-16:36
+82        android:name="android.hardware.location.network"
+82-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:15:9-57
+83        android:required="false" />
+83-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:16:9-33
+84    <uses-feature
+84-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:17:5-19:36
+85        android:name="android.hardware.location.gps"
+85-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:18:9-53
+86        android:required="false" />
+86-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:19:9-33
+87    <uses-feature
+87-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:20:5-22:36
+88        android:name="android.hardware.telephony"
+88-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:21:9-50
+89        android:required="false" />
+89-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:22:9-33
+90    <uses-feature
+90-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:23:5-25:36
+91        android:name="android.hardware.wifi"
+91-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:24:9-45
+92        android:required="false" /> <!-- Normal permission, automatically granted on API 23+ -->
+92-->[org.osmdroid:osmdroid-android:6.1.18] C:\Users\chant\.gradle\caches\8.13\transforms\c60d93e5f5545fe3720372bad93c3abe\transformed\osmdroid-android-6.1.18\AndroidManifest.xml:25:9-33
+93    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE" />
+93-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:10:5-81
+93-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:10:22-78
+94
+95    <application
+95-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:5-88:19
+96        android:allowBackup="true"
+96-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:18-44
+97        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+97-->[androidx.core:core:1.13.0] C:\Users\chant\.gradle\caches\8.13\transforms\83c6e2b54551a86df774f46d4dfb0621\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+98        android:dataExtractionRules="@xml/data_extraction_rules"
+98-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:45-101
+99        android:debuggable="true"
+100        android:extractNativeLibs="false"
+101        android:fullBackupContent="@xml/backup_rules"
+101-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:102-147
+102        android:icon="@mipmap/ic_launcher"
+102-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:148-182
+103        android:label="@string/app_name"
+103-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:183-215
+104        android:networkSecurityConfig="@xml/network_security_config"
+104-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:325-385
+105        android:roundIcon="@mipmap/ic_launcher_round"
+105-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:216-261
+106        android:supportsRtl="true"
+106-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:262-288
+107        android:testOnly="true"
+108        android:theme="@style/Theme.AquaGo"
+108-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:289-324
+109        android:usesCleartextTraffic="true" >
+109-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:22:386-421
+110        <activity
+110-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:23:9-74
+111            android:name="com.simats.aquago.MainActivity"
+111-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:23:19-47
+112            android:exported="false" />
+112-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:23:48-72
+113        <activity android:name="com.simats.aquago.OnboardingActivity" />
+113-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:24:9-55
+113-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:24:19-53
+114        <activity android:name="com.simats.aquago.RoleSelectActivity" />
+114-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:25:9-55
+114-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:25:19-53
+115        <activity android:name="com.simats.aquago.CustomerLoginActivity" />
+115-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:26:9-58
+115-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:26:19-56
+116        <activity android:name="com.simats.aquago.PartnerLoginActivity" />
+116-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:27:9-57
+116-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:27:19-55
+117        <activity android:name="com.simats.aquago.CustomerRegisterActivity" />
+117-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:28:9-61
+117-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:28:19-59
+118        <activity android:name="com.simats.aquago.PartnerRegisterActivity" />
+118-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:29:9-60
+118-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:29:19-58
+119        <activity android:name="com.simats.aquago.CustomerHomeActivity" />
+119-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:31:9-57
+119-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:31:19-55
+120        <activity android:name="com.simats.aquago.OrdersActivity" />
+120-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:32:9-51
+120-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:32:19-49
+121        <activity
+121-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:33:9-81
+122            android:name="com.simats.aquago.AddedToCartActivity"
+122-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:33:19-54
+123            android:exported="false" />
+123-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:33:55-79
+124        <activity
+124-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:34:9-78
+125            android:name="com.simats.aquago.ProductsActivity"
+125-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:34:19-51
+126            android:exported="false" />
+126-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:34:52-76
+127        <activity
+127-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:35:9-83
+128            android:name="com.simats.aquago.ProductDetailActivity"
+128-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:35:19-56
+129            android:exported="false" />
+129-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:35:57-81
+130        <activity
+130-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:36:9-74
+131            android:name="com.simats.aquago.CartActivity"
+131-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:36:19-47
+132            android:exported="false" />
+132-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:36:48-72
+133        <activity
+133-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:37:9-83
+134            android:name="com.simats.aquago.SelectAddressActivity"
+134-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:37:19-56
+135            android:exported="false" />
+135-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:37:57-81
+136        <activity
+136-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:38:9-80
+137            android:name="com.simats.aquago.AddAddressActivity"
+137-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:38:19-53
+138            android:exported="false" />
+138-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:38:54-78
+139        <activity
+139-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:40:9-81
+140            android:name="com.simats.aquago.OrderPlacedActivity"
+140-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:40:19-54
+141            android:exported="false" />
+141-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:40:55-79
+142        <activity
+142-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:41:9-80
+143            android:name="com.simats.aquago.TrackOrderActivity"
+143-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:41:19-53
+144            android:exported="false" />
+144-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:41:54-78
+145        <activity
+145-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:42:9-82
+146            android:name="com.simats.aquago.LiveTrackingActivity"
+146-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:42:19-55
+147            android:exported="false" />
+147-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:42:56-80
+148        <activity android:name="com.simats.aquago.ProfileActivity" />
+148-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:44:9-52
+148-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:44:19-50
+149        <activity android:name="com.simats.aquago.EditProfileActivity" />
+149-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:45:9-56
+149-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:45:19-54
+150        <activity
+150-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:47:9-83
+151            android:name="com.simats.aquago.NotificationsActivity"
+151-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:47:19-56
+152            android:exported="false" />
+152-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:47:57-81
+153        <activity
+153-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:48:9-88
+154            android:name="com.simats.aquago.NotificationDetailActivity"
+154-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:48:19-61
+155            android:exported="false" />
+155-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:48:62-86
+156        <activity
+156-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:50:9-84
+157            android:name="com.simats.aquago.ChangePasswordActivity"
+157-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:50:19-57
+158            android:exported="false" />
+158-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:50:58-82
+159        <activity
+159-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:51:9-84
+160            android:name="com.simats.aquago.ForgotPasswordActivity"
+160-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:51:19-57
+161            android:exported="false" />
+161-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:51:58-82
+162        <activity
+162-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:53:9-84
+163            android:name="com.simats.aquago.EnableLocationActivity"
+163-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:53:19-57
+164            android:exported="false" />
+164-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:53:58-82
+165        <activity
+165-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:54:9-79
+166            android:name="com.simats.aquago.EmptyCartActivity"
+166-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:54:19-52
+167            android:exported="false" />
+167-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:54:53-77
+168        <activity
+168-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:55:9-83
+169            android:name="com.simats.aquago.DeleteAccountActivity"
+169-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:55:19-56
+170            android:exported="false" />
+170-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:55:57-81
+171        <activity
+171-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:56:9-86
+172            android:name="com.simats.aquago.PartnerDashboardActivity"
+172-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:56:19-59
+173            android:exported="false" />
+173-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:56:60-84
+174        <activity
+174-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:57:9-83
+175            android:name="com.simats.aquago.PartnerOrdersActivity"
+175-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:57:19-56
+176            android:exported="false" />
+176-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:57:57-81
+177        <activity
+177-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:58:9-89
+178            android:name="com.simats.aquago.PartnerOrderDetailsActivity"
+178-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:58:19-62
+179            android:exported="false" />
+179-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:58:63-87
+180        <activity
+180-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:59:9-87
+181            android:name="com.simats.aquago.PartnerAddProductActivity"
+181-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:59:19-60
+182            android:exported="false" />
+182-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:59:61-85
+183        <activity
+183-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:61:9-85
+184            android:name="com.simats.aquago.PartnerEarningsActivity"
+184-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:61:19-58
+185            android:exported="false" />
+185-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:61:59-83
+186        <activity
+186-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:63:9-82
+187            android:name="com.simats.aquago.OrderDetailsActivity"
+187-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:63:19-55
+188            android:exported="false" />
+188-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:63:56-80
+189        <activity
+189-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:64:9-81
+190            android:name="com.simats.aquago.CancelOrderActivity"
+190-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:64:19-54
+191            android:exported="false" />
+191-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:64:55-79
+192        <activity
+192-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:65:9-83
+193            android:name="com.simats.aquago.SelectPartnerActivity"
+193-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:65:19-56
+194            android:exported="false" />
+194-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:65:57-81
+195        <activity
+195-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:66:9-85
+196            android:name="com.simats.aquago.PartnerLocationActivity"
+196-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:66:19-58
+197            android:exported="false" />
+197-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:66:59-83
+198        <activity
+198-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:67:9-85
+199            android:name="com.simats.aquago.PartnerProductsActivity"
+199-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:67:19-58
+200            android:exported="false" />
+200-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:67:59-83
+201        <activity
+201-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:68:9-81
+202            android:name="com.simats.aquago.EditProductActivity"
+202-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:68:19-54
+203            android:exported="false" />
+203-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:68:55-79
+204        <activity
+204-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:69:9-84
+205            android:name="com.simats.aquago.PartnerProfileActivity"
+205-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:69:19-57
+206            android:exported="false" />
+206-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:69:58-82
+207        <activity
+207-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:70:9-81
+208            android:name="com.simats.aquago.HelpSupportActivity"
+208-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:70:19-54
+209            android:exported="false" />
+209-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:70:55-79
+210        <activity
+210-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:71:9-83
+211            android:name="com.simats.aquago.PrivacyPolicyActivity"
+211-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:71:19-56
+212            android:exported="false" />
+212-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:71:57-81
+213        <activity
+213-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:72:9-75
+214            android:name="com.simats.aquago.AboutActivity"
+214-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:72:19-48
+215            android:exported="false" />
+215-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:72:49-73
+216        <activity
+216-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:73:9-74
+217            android:name="com.simats.aquago.ChatActivity"
+217-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:73:19-47
+218            android:exported="false" />
+218-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:73:48-72
+219
+220        <!-- Firebase Cloud Messaging Service -->
+221        <service
+221-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:76:9-80:19
+222            android:name="com.simats.aquago.MyFirebaseMessagingService"
+222-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:76:18-60
+223            android:exported="false" >
+223-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:76:61-85
+224            <intent-filter>
+224-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:77:13-79:29
+225                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+225-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:78:17-78
+225-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:78:25-75
+226            </intent-filter>
+227        </service>
+228
+229        <activity
+229-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:82:9-87:20
+230            android:name="com.simats.aquago.SplashActivity"
+230-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:82:19-49
+231            android:exported="true" >
+231-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:82:50-73
+232            <intent-filter>
+232-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:83:13-86:29
+233                <action android:name="android.intent.action.MAIN" />
+233-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:84:17-69
+233-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:84:25-66
+234
+235                <category android:name="android.intent.category.LAUNCHER" />
+235-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:85:17-77
+235-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:85:27-74
+236            </intent-filter>
+237        </activity>
+238        <activity
+238-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:42:9-50:20
+239            android:name="com.razorpay.CheckoutActivity"
+239-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:43:13-57
+240            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+240-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:44:13-83
+241            android:exported="false"
+241-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:45:13-37
+242            android:theme="@style/CheckoutTheme" >
+242-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:46:13-49
+243            <intent-filter>
+243-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:47:13-49:29
+244                <action android:name="android.intent.action.MAIN" />
+244-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:84:17-69
+244-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:84:25-66
+245            </intent-filter>
+246        </activity>
+247
+248        <provider
+248-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:52:9-60:20
+249            android:name="androidx.startup.InitializationProvider"
+249-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:53:13-67
+250            android:authorities="com.simats.aquago.androidx-startup"
+250-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:54:13-68
+251            android:exported="false" >
+251-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:55:13-37
+252            <meta-data
+252-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:57:13-59:52
+253                android:name="com.razorpay.RazorpayInitializer"
+253-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:58:17-64
+254                android:value="androidx.startup" />
+254-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:59:17-49
+255            <meta-data
+255-->[androidx.emoji2:emoji2:1.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\027a243d58b7eeb64ae0d14e44349526\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+256                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+256-->[androidx.emoji2:emoji2:1.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\027a243d58b7eeb64ae0d14e44349526\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+257                android:value="androidx.startup" />
+257-->[androidx.emoji2:emoji2:1.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\027a243d58b7eeb64ae0d14e44349526\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+258            <meta-data
+258-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\chant\.gradle\caches\8.13\transforms\986355c9ca8c0406f8b9a272f72ccbe1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+259                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+259-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\chant\.gradle\caches\8.13\transforms\986355c9ca8c0406f8b9a272f72ccbe1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+260                android:value="androidx.startup" />
+260-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\chant\.gradle\caches\8.13\transforms\986355c9ca8c0406f8b9a272f72ccbe1\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+261            <meta-data
+261-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+262                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+262-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+263                android:value="androidx.startup" />
+263-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+264        </provider>
+265
+266        <activity
+266-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:62:9-65:75
+267            android:name="com.razorpay.MagicXActivity"
+267-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:63:13-55
+268            android:exported="false"
+268-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:64:13-37
+269            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+269-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:65:13-72
+270        <activity
+270-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:23:9-27:75
+271            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+271-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:24:13-93
+272            android:excludeFromRecents="true"
+272-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:25:13-46
+273            android:exported="false"
+273-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:26:13-37
+274            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+274-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:27:13-72
+275        <!--
+276            Service handling Google Sign-In user revocation. For apps that do not integrate with
+277            Google Sign-In, this service will never be started.
+278        -->
+279        <service
+279-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:33:9-37:51
+280            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+280-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:34:13-89
+281            android:exported="true"
+281-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:35:13-36
+282            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+282-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:36:13-107
+283            android:visibleToInstantApps="true" />
+283-->[com.google.android.gms:play-services-auth:21.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\8f981c01665ce904814d099723795621\transformed\play-services-auth-21.1.0\AndroidManifest.xml:37:13-48
+284
+285        <receiver
+285-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:29:9-40:20
+286            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+286-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:30:13-78
+287            android:exported="true"
+287-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:31:13-36
+288            android:permission="com.google.android.c2dm.permission.SEND" >
+288-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:32:13-73
+289            <intent-filter>
+289-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:33:13-35:29
+290                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+290-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:34:17-81
+290-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:34:25-78
+291            </intent-filter>
+292
+293            <meta-data
+293-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:37:13-39:40
+294                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+294-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:38:17-92
+295                android:value="true" />
+295-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:39:17-37
+296        </receiver>
+297        <!--
+298             FirebaseMessagingService performs security checks at runtime,
+299             but set to not exported to explicitly avoid allowing another app to call it.
+300        -->
+301        <service
+301-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:46:9-53:19
+302            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+302-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:47:13-82
+303            android:directBootAware="true"
+303-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:48:13-43
+304            android:exported="false" >
+304-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:49:13-37
+305            <intent-filter android:priority="-500" >
+305-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:77:13-79:29
+306                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+306-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:78:17-78
+306-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:78:25-75
+307            </intent-filter>
+308        </service>
+309        <service
+309-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:54:9-63:19
+310            android:name="com.google.firebase.components.ComponentDiscoveryService"
+310-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:55:13-84
+311            android:directBootAware="true"
+311-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+312            android:exported="false" >
+312-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:56:13-37
+313            <meta-data
+313-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:57:13-59:85
+314                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+314-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:58:17-122
+315                android:value="com.google.firebase.components.ComponentRegistrar" />
+315-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:59:17-82
+316            <meta-data
+316-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:60:13-62:85
+317                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+317-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:61:17-119
+318                android:value="com.google.firebase.components.ComponentRegistrar" />
+318-->[com.google.firebase:firebase-messaging:24.1.0] C:\Users\chant\.gradle\caches\8.13\transforms\cee2bb9c3b02b1405535c7553688646e\transformed\firebase-messaging-24.1.0\AndroidManifest.xml:62:17-82
+319            <meta-data
+319-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\158cf08527d7d592d9b450bae0c8e9b0\transformed\firebase-installations-18.0.0\AndroidManifest.xml:15:13-17:85
+320                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+320-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\158cf08527d7d592d9b450bae0c8e9b0\transformed\firebase-installations-18.0.0\AndroidManifest.xml:16:17-130
+321                android:value="com.google.firebase.components.ComponentRegistrar" />
+321-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\158cf08527d7d592d9b450bae0c8e9b0\transformed\firebase-installations-18.0.0\AndroidManifest.xml:17:17-82
+322            <meta-data
+322-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\158cf08527d7d592d9b450bae0c8e9b0\transformed\firebase-installations-18.0.0\AndroidManifest.xml:18:13-20:85
+323                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+323-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\158cf08527d7d592d9b450bae0c8e9b0\transformed\firebase-installations-18.0.0\AndroidManifest.xml:19:17-127
+324                android:value="com.google.firebase.components.ComponentRegistrar" />
+324-->[com.google.firebase:firebase-installations:18.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\158cf08527d7d592d9b450bae0c8e9b0\transformed\firebase-installations-18.0.0\AndroidManifest.xml:20:17-82
+325            <meta-data
+325-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\a243cfd6c0cf638757da9ae589dc2983\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+326                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+326-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\a243cfd6c0cf638757da9ae589dc2983\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+327                android:value="com.google.firebase.components.ComponentRegistrar" />
+327-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\a243cfd6c0cf638757da9ae589dc2983\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+328            <meta-data
+328-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+329                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+329-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+330                android:value="com.google.firebase.components.ComponentRegistrar" />
+330-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+331            <meta-data
+331-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\chant\.gradle\caches\8.13\transforms\e097d2612f7cd9363bddb6aefb64caf6\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:25:13-27:85
+332                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+332-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\chant\.gradle\caches\8.13\transforms\e097d2612f7cd9363bddb6aefb64caf6\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:26:17-115
+333                android:value="com.google.firebase.components.ComponentRegistrar" />
+333-->[com.google.firebase:firebase-datatransport:18.2.0] C:\Users\chant\.gradle\caches\8.13\transforms\e097d2612f7cd9363bddb6aefb64caf6\transformed\firebase-datatransport-18.2.0\AndroidManifest.xml:27:17-82
+334        </service> <!-- Needs to be explicitly declared on P+ -->
+335        <uses-library
+335-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\45055f453db46467c807f28e62249368\transformed\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+336            android:name="org.apache.http.legacy"
+336-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\45055f453db46467c807f28e62249368\transformed\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+337            android:required="false" />
+337-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\45055f453db46467c807f28e62249368\transformed\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+338
+339        <activity
+339-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\d389473dcc7788ca4f6d89f47d7697e0\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+340            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+340-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\d389473dcc7788ca4f6d89f47d7697e0\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+341            android:exported="false"
+341-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\d389473dcc7788ca4f6d89f47d7697e0\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+342            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+342-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\d389473dcc7788ca4f6d89f47d7697e0\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+343
+344        <provider
+344-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+345            android:name="com.google.firebase.provider.FirebaseInitProvider"
+345-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+346            android:authorities="com.simats.aquago.firebaseinitprovider"
+346-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+347            android:directBootAware="true"
+347-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+348            android:exported="false"
+348-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+349            android:initOrder="100" />
+349-->[com.google.firebase:firebase-common:21.0.0] C:\Users\chant\.gradle\caches\8.13\transforms\5531a786baaa87f75f82e1c2c8d40fa9\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+350
+351        <receiver
+351-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+352            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+352-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+353            android:directBootAware="false"
+353-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+354            android:enabled="true"
+354-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+355            android:exported="true"
+355-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+356            android:permission="android.permission.DUMP" >
+356-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+357            <intent-filter>
+357-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+358                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+358-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+359            </intent-filter>
+360            <intent-filter>
+360-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+361                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+361-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+362            </intent-filter>
+363            <intent-filter>
+363-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+364                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+364-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+365            </intent-filter>
+366            <intent-filter>
+366-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+367                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+367-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\chant\.gradle\caches\8.13\transforms\eceff566de0ac04acc71dc1e3260acbb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+368            </intent-filter>
+369        </receiver>
+370
+371        <meta-data
+371-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\c22eeea20550d66e6a8a15a885f1d50d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+372            android:name="com.google.android.gms.version"
+372-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\c22eeea20550d66e6a8a15a885f1d50d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+373            android:value="@integer/google_play_services_version" />
+373-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\chant\.gradle\caches\8.13\transforms\c22eeea20550d66e6a8a15a885f1d50d\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+374
+375        <service
+375-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\0af961ff9e55264107f3d70185609a89\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:28:9-34:19
+376            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+376-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\0af961ff9e55264107f3d70185609a89\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:29:13-103
+377            android:exported="false" >
+377-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\0af961ff9e55264107f3d70185609a89\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:30:13-37
+378            <meta-data
+378-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\0af961ff9e55264107f3d70185609a89\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:31:13-33:39
+379                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+379-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\0af961ff9e55264107f3d70185609a89\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:32:17-94
+380                android:value="cct" />
+380-->[com.google.android.datatransport:transport-backend-cct:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\0af961ff9e55264107f3d70185609a89\transformed\transport-backend-cct-3.1.9\AndroidManifest.xml:33:17-36
+381        </service>
+382        <service
+382-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:26:9-30:19
+383            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+383-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:27:13-117
+384            android:exported="false"
+384-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:28:13-37
+385            android:permission="android.permission.BIND_JOB_SERVICE" >
+385-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:29:13-69
+386        </service>
+387
+388        <receiver
+388-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:32:9-34:40
+389            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+389-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:33:13-132
+390            android:exported="false" />
+390-->[com.google.android.datatransport:transport-runtime:3.1.9] C:\Users\chant\.gradle\caches\8.13\transforms\89b9b637af0548857d2ad79948cf4178\transformed\transport-runtime-3.1.9\AndroidManifest.xml:34:13-37
+391
+392        <activity
+392-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:13:9-30:20
+393            android:name="com.razorpay.DeeplinkActivity"
+393-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:14:13-57
+394            android:exported="true"
+394-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:15:13-36
+395            android:theme="@style/CheckoutTheme" >
+395-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:16:13-49
+396            <intent-filter>
+396-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:17:13-29:29
+397                <action android:name="android.intent.action.VIEW" />
+397-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:13-65
+397-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:17:21-62
+398
+399                <category android:name="android.intent.category.DEFAULT" />
+399-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:20:17-76
+399-->[com.razorpay:core:1.0.4] C:\Users\chant\.gradle\caches\8.13\transforms\bd5ac0e82f9d99433cfa42cc27c5a8e2\transformed\core-1.0.4\AndroidManifest.xml:20:27-73
+400                <category android:name="android.intent.category.BROWSABLE" />
+400-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:21:13-74
+400-->[com.razorpay:standard-core:1.7.4] C:\Users\chant\.gradle\caches\8.13\transforms\925e44248212e3871712ed2568729f7a\transformed\standard-core-1.7.4\AndroidManifest.xml:21:23-71
+401
+402                <data
+402-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:13-42
+403                    android:host="com.simats.aquago"
+404                    android:scheme="razorpay" />
+404-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:19-39
+405                <data
+405-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:13-42
+406                    android:host="pg-router.dev.razorpay.in"
+407                    android:scheme="https" />
+407-->C:\Users\chant\AndroidStudioProjects\AquaGo3\app\src\main\AndroidManifest.xml:18:19-39
+408            </intent-filter>
+409        </activity>
+410    </application>
+411
+412</manifest>

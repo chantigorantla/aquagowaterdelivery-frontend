@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#F6F9FC" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- Header -->
+    <LinearLayout android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical" android:background="#FFFFFF" android:elevation="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvBack" android:text="← Back" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Orders" android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+        <View android:layout_width="48dp" android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <!-- Filter Chips -->
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:scrollbars="none" android:background="#FFFFFF" android:paddingHorizontal="8dp" android:paddingVertical="8dp">
+
+        <com.google.android.material.chip.ChipGroup android:id="@+id/chipGroupFilter" android:layout_width="wrap_content" android:layout_height="wrap_content" app:singleSelection="true" app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip android:id="@+id/chipAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All" android:checked="true" style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip android:id="@+id/chipPending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pending" style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip android:id="@+id/chipActive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Accepted" style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip android:id="@+id/chipCompleted" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Completed" style="@style/Widget.MaterialComponents.Chip.Choice"/>
+
+            <com.google.android.material.chip.Chip android:id="@+id/chipCancelled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancelled" style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <!-- Empty View -->
+    <TextView android:id="@+id/tvEmpty" android:text="No orders yet" android:textColor="#666666" android:textSize="16sp" android:gravity="center" android:visibility="gone" android:layout_gravity="center" android:padding="32dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- Orders List -->
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvPartnerOrders" android:padding="8dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+</LinearLayout>

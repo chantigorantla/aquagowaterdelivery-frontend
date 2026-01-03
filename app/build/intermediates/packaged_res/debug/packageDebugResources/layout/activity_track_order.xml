@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F5F5">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#12A4E8" android:padding="16dp" android:gravity="center_vertical">
+
+        <TextView android:id="@+id/btnBack" android:text="←" android:textSize="24sp" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Track Order" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginStart="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Loading indicator -->
+    <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:layout_marginTop="50dp" android:visibility="gone"/>
+
+    <!-- No active order view -->
+    <LinearLayout android:id="@+id/layoutNoOrder" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="40dp" android:visibility="gone">
+
+        <TextView android:text="📍" android:textSize="48sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="No Active Orders" android:textSize="18sp" android:textStyle="bold" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="You don't have any orders to track right now" android:textColor="#666666" android:textSize="14sp" android:gravity="center" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnOrderNow" android:text="Place an Order" android:background="@drawable/btn_primary1" android:textColor="#FFFFFF" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Order tracking content -->
+    <ScrollView android:id="@+id/scrollContent" android:layout_width="match_parent" android:layout_height="match_parent" android:visibility="gone">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+            <!-- Order Info Card -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/card_white" android:orientation="vertical" android:padding="16dp">
+
+                <TextView android:id="@+id/tvOrderId" android:text="Order #--" android:textStyle="bold" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <TextView android:id="@+id/tvOrderStatus" android:text="Status: Pending" android:textColor="#12A4E8" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <TextView android:id="@+id/tvDeliveryAddress" android:text="Delivery Address: --" android:textColor="#666666" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Tracking Timeline -->
+            <TextView android:text="Order Status" android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <LinearLayout android:id="@+id/layoutTimeline" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="16dp" android:background="@drawable/card_white" android:padding="16dp">
+
+                <!-- Step 1: Order Placed -->
+                <LinearLayout android:id="@+id/step1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/step1Icon" android:text="✅" android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/step1Text" android:text="Order Placed" android:textSize="14sp" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View android:layout_width="2dp" android:layout_height="20dp" android:background="#E0E0E0" android:layout_marginStart="10dp"/>
+
+                <!-- Step 2: Order Confirmed -->
+                <LinearLayout android:id="@+id/step2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/step2Icon" android:text="⭕" android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/step2Text" android:text="Order Confirmed" android:textSize="14sp" android:textColor="#999999" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View android:layout_width="2dp" android:layout_height="20dp" android:background="#E0E0E0" android:layout_marginStart="10dp"/>
+
+                <!-- Step 3: Dispatched -->
+                <LinearLayout android:id="@+id/step3" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/step3Icon" android:text="⭕" android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/step3Text" android:text="Dispatched" android:textSize="14sp" android:textColor="#999999" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View android:layout_width="2dp" android:layout_height="20dp" android:background="#E0E0E0" android:layout_marginStart="10dp"/>
+
+                <!-- Step 4: Out for Delivery -->
+                <LinearLayout android:id="@+id/step4" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/step4Icon" android:text="⭕" android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/step4Text" android:text="Out for Delivery" android:textSize="14sp" android:textColor="#999999" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View android:layout_width="2dp" android:layout_height="20dp" android:background="#E0E0E0" android:layout_marginStart="10dp"/>
+
+                <!-- Step 5: Delivered -->
+                <LinearLayout android:id="@+id/step5" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+
+                    <TextView android:id="@+id/step5Icon" android:text="⭕" android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/step5Text" android:text="Delivered" android:textSize="14sp" android:textColor="#999999" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Order Items -->
+            <TextView android:text="Order Items" android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <LinearLayout android:id="@+id/layoutItems" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="8dp" android:background="@drawable/card_white" android:padding="16dp">
+
+                <TextView android:id="@+id/tvItems" android:text="Loading items..." android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

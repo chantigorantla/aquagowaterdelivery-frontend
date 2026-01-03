@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="32dp" android:background="#F5F5F5">
+
+    <ImageView android:src="@android:drawable/ic_dialog_info" android:layout_width="100dp" android:layout_height="100dp"/>
+
+    <TextView android:text="Order Placed!" android:textSize="24sp" android:textStyle="bold" android:textColor="#4CAF50" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvOrderId" android:text="Order #1001" android:textSize="16sp" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvTotalAmount" android:text="Total: ₹105" android:textSize="18sp" android:textStyle="bold" android:textColor="#12A4E8" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <!-- Payment Details (shown for UPI payments) -->
+    <LinearLayout android:id="@+id/layoutPaymentDetails" android:orientation="vertical" android:visibility="gone" android:gravity="center" android:background="#E8F5E9" android:padding="16dp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Payment Verified ✓" android:textColor="#2E7D32" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tvTxnId" android:text="Txn ID: -" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tvUtrNumber" android:text="UTR: -" android:textColor="#666666" android:layout_marginTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView android:text="Thank you for your order! Your water will be delivered soon." android:textColor="#666666" android:textAlignment="center" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Button android:id="@+id/btnTrackOrder" android:text="Track Order" android:textColor="#FFFFFF" android:backgroundTint="#12A4E8" android:layout_marginTop="32dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+
+    <Button android:id="@+id/btnContinueShopping" android:text="Continue Shopping" android:textColor="#12A4E8" android:background="@android:color/transparent" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="48dp"/>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+
+        <!-- Logo / Icon -->
+        <ImageView android:layout_width="80dp" android:layout_height="80dp" android:layout_marginTop="40dp" android:src="@android:drawable/ic_menu_manage" android:backgroundTint="#12A4E8"/>
+
+        <TextView android:text="Partner Login" android:textSize="24sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <TextView android:text="Sign in to manage your deliveries" android:textSize="14sp" android:textColor="#777777" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <!-- Email Field -->
+        <EditText android:id="@+id/etEmail" android:hint="Email Address" android:inputType="textEmailAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:padding="16dp" android:background="@drawable/edit_text_bg" android:drawableStart="@android:drawable/sym_action_email" android:drawablePadding="12dp"/>
+
+        <!-- Password Field -->
+        <EditText android:id="@+id/etPassword" android:hint="Password" android:inputType="textPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:padding="16dp" android:background="@drawable/edit_text_bg" android:drawableStart="@android:drawable/ic_lock_idle_lock" android:drawablePadding="12dp"/>
+
+        <!-- Forgot Password -->
+        <TextView android:id="@+id/tvForgotPassword" android:text="Forgot Password?" android:textColor="#12A4E8" android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_marginTop="8dp" android:padding="4dp"/>
+
+        <!-- Login Button -->
+        <Button android:id="@+id/btnLogin" android:text="Login" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="32dp" android:background="@drawable/btn_primary1" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold"/>
+
+        <!-- Progress Bar -->
+        <ProgressBar android:id="@+id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:visibility="gone" />
+
+        <!-- Divider -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="32dp">
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" android:background="#DDDDDD"/>
+
+            <TextView android:text="  OR  " android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" android:background="#DDDDDD"/>
+        </LinearLayout>
+
+        <!-- Sign Up Link -->
+        <TextView android:id="@+id/tvSignUp" android:text="Don't have an account? Sign Up" android:textColor="#12A4E8" android:textSize="15sp" android:padding="16dp" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <!-- Back to Role Select -->
+        <TextView android:id="@+id/tvBack" android:text="← Back" android:textColor="#666666" android:textSize="14sp" android:padding="12dp" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

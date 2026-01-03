@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="10dp" app:cardElevation="2dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#FFFFFF" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+
+        <!-- Icon -->
+        <FrameLayout android:layout_width="44dp" android:layout_height="44dp" android:background="@drawable/circle_green_light">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="💵" android:textSize="18sp"/>
+        </FrameLayout>
+
+        <!-- Details -->
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+
+            <TextView android:id="@+id/tvOrderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#ORD123" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold"/>
+
+            <TextView android:id="@+id/tvCustomer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Customer Name" android:textColor="#888888" android:textSize="12sp"/>
+
+            <TextView android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Dec 26, 2024 10:30 AM" android:textColor="#AAAAAA" android:textSize="11sp"/>
+        </LinearLayout>
+
+        <!-- Amount -->
+        <TextView android:id="@+id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+₹150" android:textColor="#4CAF50" android:textSize="16sp" android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

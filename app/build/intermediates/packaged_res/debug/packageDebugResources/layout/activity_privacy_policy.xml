@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F6F9FC">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="#12A4E8">
+
+        <TextView android:id="@+id/tvBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="←" android:textSize="24sp" android:textColor="#FFFFFF" android:padding="8dp"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Privacy Policy" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+
+            <!-- Last Updated -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Last Updated: December 2024" android:textSize="12sp" android:textColor="#999999" android:layout_marginBottom="16dp"/>
+
+            <!-- Introduction -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Introduction" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Welcome to AquaGo. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application." android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="20dp"/>
+
+            <!-- Information We Collect -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Information We Collect" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="We collect the following types of information:\n\n• Personal Information: Name, email address, phone number, and delivery addresses.\n\n• Location Data: Your device location to find nearby water delivery partners.\n\n• Payment Information: UPI transaction details for order payments.\n\n• Usage Data: Information about how you use the app." android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="20dp"/>
+
+            <!-- How We Use Your Information -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="How We Use Your Information" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="We use the collected information to:\n\n• Process and fulfill your water delivery orders\n• Connect you with nearby delivery partners\n• Send order confirmations and delivery updates\n• Improve our services and user experience\n• Ensure secure transactions" android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="20dp"/>
+
+            <!-- Data Sharing -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Sharing" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="We share your information only with:\n\n• Delivery Partners: To fulfill your orders.\n• Payment Processors: For processing payments.\n\nWe do not sell your personal information to third parties." android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="20dp"/>
+
+            <!-- Data Security -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Security" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="We implement appropriate security measures to protect your personal information against unauthorized access. Your passwords are encrypted and stored securely." android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="20dp"/>
+
+            <!-- Your Rights -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Your Rights" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You have the right to:\n\n• Access and update your personal information\n• Delete your account and associated data\n• Opt out of promotional notifications\n• Request a copy of your data" android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="20dp"/>
+
+            <!-- Contact Us -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Contact Us" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="8dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="If you have questions about this Privacy Policy, please contact us at:\n\nEmail: support@aquago.in\nPhone: +91 98765 43210" android:textSize="14sp" android:textColor="#666666" android:lineSpacingExtra="4dp" android:layout_marginBottom="32dp"/>
+
+            <!-- Footer -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="By using AquaGo, you agree to this Privacy Policy." android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#F6F9FC" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!-- Header -->
+    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="#12A4E8" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvBack" android:text="←" android:textSize="24sp" android:textColor="#FFFFFF" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="My Profile" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginStart="12dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvEdit" android:text="✏️ Edit" android:textSize="14sp" android:textColor="#FFFFFF" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <!-- Profile Avatar Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="12dp" app:cardElevation="3dp">
+
+                <LinearLayout android:orientation="vertical" android:gravity="center" android:padding="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <!-- Avatar Circle -->
+                    <LinearLayout android:layout_width="80dp" android:layout_height="80dp" android:gravity="center" android:background="@drawable/circle_blue">
+
+                        <TextView android:id="@+id/tvInitials" android:text="P" android:textSize="32sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/tvName" android:text="Partner Name" android:textSize="20sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/tvBusinessName" android:text="Business Name" android:textSize="14sp" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <!-- Online Badge -->
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/badge_green" android:paddingHorizontal="16dp" android:paddingVertical="6dp" android:gravity="center">
+
+                        <View android:id="@+id/statusDot" android:layout_width="8dp" android:layout_height="8dp" android:background="@drawable/circle_green"/>
+
+                        <TextView android:id="@+id/tvStatus" android:text="Online" android:textSize="12sp" android:textColor="#4CAF50" android:textStyle="bold" android:layout_marginStart="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact Info Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="Contact Information" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <!-- Email -->
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:text="📧" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                        <LinearLayout android:orientation="vertical" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:text="Email" android:textSize="11sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:id="@+id/tvEmail" android:text="partner@example.com" android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginVertical="12dp"/>
+
+                    <!-- Phone -->
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:text="📱" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                        <LinearLayout android:orientation="vertical" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:text="Phone" android:textSize="11sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:id="@+id/tvPhone" android:text="Not set" android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Location Card -->
+            <androidx.cardview.widget.CardView android:id="@+id/cardLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="12dp" app:cardElevation="2dp" android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="Business Location" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+                        <TextView android:text="✏️ Edit" android:textSize="12sp" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="📍" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:id="@+id/tvLocation" android:text="Not set - tap to add" android:textSize="14sp" android:textColor="#333333" android:layout_marginStart="12dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:text="🚚" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:id="@+id/tvServiceRadius" android:text="Service radius: 10 km" android:textSize="14sp" android:textColor="#666666" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Stats Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="Business Stats" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <TextView android:id="@+id/tvTotalOrders" android:text="0" android:textSize="22sp" android:textStyle="bold" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:text="Total Orders" android:textSize="11sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#EEEEEE"/>
+
+                        <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <TextView android:id="@+id/tvProductCount" android:text="0" android:textSize="22sp" android:textStyle="bold" android:textColor="#4CAF50" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:text="Products" android:textSize="11sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <View android:layout_width="1dp" android:layout_height="match_parent" android:background="#EEEEEE"/>
+
+                        <LinearLayout android:orientation="vertical" android:gravity="center" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <TextView android:id="@+id/tvRating" android:text="--" android:textSize="22sp" android:textStyle="bold" android:textColor="#FF9800" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:text="Rating" android:textSize="11sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- UPI Payment Settings Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="Payment Settings" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:id="@+id/btnEditUpi" android:orientation="horizontal" android:gravity="center_vertical" android:background="?attr/selectableItemBackground" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:text="💳" android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                        <LinearLayout android:orientation="vertical" android:layout_marginStart="12dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+                            <TextView android:text="UPI ID" android:textSize="11sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <TextView android:id="@+id/tvUpiId" android:text="Not set - Tap to add" android:textSize="14sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <TextView android:text="✏️" android:textSize="16sp" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:text="Customers will pay to this UPI ID when they select UPI payment" android:textSize="11sp" android:textColor="#999999" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Account Section Header -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:text="Account" android:textColor="#12A4E8" android:textSize="14sp" android:textStyle="bold"/>
+
+            <!-- Change Password Card -->
+            <LinearLayout android:id="@+id/btnChangePassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/settings_item_bg" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+
+                <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_bg">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="🔑" android:textSize="20sp"/>
+                </FrameLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Change Password" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Update your account password" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textColor="#CCCCCC" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Help & Support Card -->
+            <LinearLayout android:id="@+id/btnHelpCenter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/settings_item_bg" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+
+                <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_bg">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="❓" android:textSize="20sp"/>
+                </FrameLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Help &amp; Support" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="FAQs and customer support" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textColor="#CCCCCC" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Privacy Policy Card -->
+            <LinearLayout android:id="@+id/btnPrivacyPolicy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/settings_item_bg" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+
+                <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_bg">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="📜" android:textSize="20sp"/>
+                </FrameLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Privacy Policy" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Read our privacy policy" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textColor="#CCCCCC" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Danger Zone Header -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:layout_marginTop="24dp" android:layout_marginBottom="12dp" android:text="Danger Zone" android:textColor="#F44336" android:textSize="14sp" android:textStyle="bold"/>
+
+            <!-- Delete Account Card -->
+            <LinearLayout android:id="@+id/btnDeleteAccount" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/settings_item_danger_bg" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+
+                <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_danger_bg">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="🗑️" android:textSize="20sp"/>
+                </FrameLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delete Account" android:textColor="#F44336" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Permanently remove your account" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textColor="#EF9A9A" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- Logout Card -->
+            <LinearLayout android:id="@+id/btnLogout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/settings_item_danger_bg" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+
+                <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_danger_bg">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="🚪" android:textSize="20sp"/>
+                </FrameLayout>
+
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logout" android:textColor="#F44336" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Sign out from your account" android:textColor="#888888" android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textColor="#EF9A9A" android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- App Version -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:gravity="center" android:orientation="vertical">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💧" android:textSize="24sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="AquaGo v1.0.0" android:textColor="#999999" android:textSize="14sp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Made with ❤️ in India" android:textColor="#CCCCCC" android:textSize="12sp"/>
+            </LinearLayout>
+
+            <ProgressBar android:id="@+id/progressBar" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

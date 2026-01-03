@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.simats.aquago.app-mergeDebugResources-43:/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\chant\\.gradle\\caches\\8.13\\transforms\\3dab5b011f81e11c9e1730b63588499b\\transformed\\play-services-wallet-18.1.3\\res\\values-id\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "202",
+                        "endColumns": "73",
+                        "endOffsets": "275"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "77",
+                        "endOffsets": "128"
+                    }
+                }
+            ]
+        }
+    ]
+}

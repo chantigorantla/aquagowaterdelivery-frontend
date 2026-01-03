@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardCornerRadius="8dp" app:cardElevation="2dp">
+
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tvOrderId" android:text="#AQ1001" android:textStyle="bold" android:textSize="16sp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvStatus" android:text="Pending" android:textColor="#FF9800" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvAddress" android:text="123 Main Street" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvItems" android:text="20L x 2" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Accept/Reject Buttons (for pending orders) -->
+        <LinearLayout android:id="@+id/layoutPendingButtons" android:orientation="horizontal" android:layout_marginTop="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnAccept" android:text="Accept" android:textColor="#FFFFFF" android:backgroundTint="#4CAF50" android:layout_weight="1" android:layout_marginEnd="8dp" android:layout_width="0dp" android:layout_height="40dp"/>
+
+            <Button android:id="@+id/btnReject" android:text="Reject" android:textColor="#FFFFFF" android:backgroundTint="#F44336" android:layout_weight="1" android:layout_width="0dp" android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <!-- Dispatch Button (for confirmed orders) -->
+        <Button android:id="@+id/btnDispatch" android:text="📦 Dispatch" android:textColor="#FFFFFF" android:backgroundTint="#FF9800" android:visibility="gone" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+
+        <!-- Out for Delivery Button (for processing orders) -->
+        <Button android:id="@+id/btnOutForDelivery" android:text="🚚 Out for Delivery" android:textColor="#FFFFFF" android:backgroundTint="#2196F3" android:visibility="gone" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+
+        <!-- Mark Delivered Button (for out_for_delivery orders) -->
+        <Button android:id="@+id/btnComplete" android:text="✅ Mark Delivered" android:textColor="#FFFFFF" android:backgroundTint="#4CAF50" android:visibility="gone" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="40dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

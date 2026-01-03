@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F5F5">
+
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvBack" android:text="← Back" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvOrderId" android:text="Order #1001" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvOrderDate" android:text="Dec 25, 2024" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvOrderStatus" android:text="✅ Confirmed" android:textColor="#4CAF50" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Items Section -->
+        <TextView android:text="Items" android:textStyle="bold" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <LinearLayout android:id="@+id/layoutItems" android:orientation="vertical" android:background="#FFFFFF" android:padding="12dp" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Total -->
+        <TextView android:id="@+id/tvOrderTotal" android:text="Total: ₹105" android:textStyle="bold" android:textSize="16sp" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Delivery Address -->
+        <TextView android:text="Delivery Address" android:textStyle="bold" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvDeliveryAddress" android:text="123 Main Street" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Payment Method -->
+        <TextView android:text="Payment Method" android:textStyle="bold" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvPaymentMethod" android:text="Cash on Delivery" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Delivery Slot -->
+        <TextView android:text="🕐 Scheduled Delivery" android:textStyle="bold" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvDeliverySlot" android:text="Today - Morning (6 AM - 9 AM)" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_gravity="center" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout android:orientation="vertical" android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <!-- Track Live Button - Only visible for out_for_delivery -->
+            <Button android:id="@+id/btnTrackLive" android:text="🗺️ Track Live on Map" android:textColor="#FFFFFF" android:backgroundTint="#E53935" android:layout_marginBottom="12dp" android:layout_width="match_parent" android:layout_height="52dp" android:visibility="gone"/>
+
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <Button android:id="@+id/btnTrackOrder" android:text="Track Status" android:textColor="#FFFFFF" android:backgroundTint="#12A4E8" android:layout_weight="1" android:layout_marginEnd="8dp" android:layout_width="0dp" android:layout_height="48dp"/>
+
+                <Button android:id="@+id/btnCancelOrder" android:text="Cancel" android:textColor="#F44336" android:layout_weight="1" android:layout_width="0dp" android:layout_height="48dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F7FAFC">
+
+    <!-- Header -->
+    <LinearLayout android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical" android:background="#FFFFFF" android:elevation="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView android:id="@+id/tvBack" android:text="← Back" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Checkout" android:textSize="18sp" android:textStyle="bold" android:gravity="center" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+        <View android:layout_width="48dp" android:layout_height="1dp"/>
+    </LinearLayout>
+
+    <!-- Empty Cart View -->
+    <LinearLayout android:id="@+id/layoutEmptyCart" android:orientation="vertical" android:gravity="center" android:visibility="gone" android:layout_weight="1" android:layout_width="match_parent" android:layout_height="0dp">
+
+        <TextView android:id="@+id/tvEmpty" android:text="Your cart is empty" android:textSize="16sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnContinueShopping" android:text="Browse Products" android:textColor="#FFFFFF" android:backgroundTint="#12A4E8" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Main Scrollable Content -->
+    <ScrollView android:id="@+id/scrollViewContent" android:layout_weight="1" android:fillViewport="true" android:layout_width="match_parent" android:layout_height="0dp">
+
+        <LinearLayout android:id="@+id/layoutCartContent" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <!-- Cart Items Section -->
+            <LinearLayout android:orientation="vertical" android:background="#FFFFFF" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:text="Cart Items" android:textStyle="bold" android:textSize="16sp" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvCartItems" android:nestedScrollingEnabled="false" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <!-- Delivery Address Section -->
+            <LinearLayout android:id="@+id/layoutAddressSection" android:orientation="vertical" android:background="#FFFFFF" android:padding="16dp" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="📍 Delivery Address" android:textStyle="bold" android:textSize="16sp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/tvChangeAddress" android:text="Change" android:textColor="#12A4E8" android:textSize="14sp" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Selected Address Display -->
+                <LinearLayout android:id="@+id/layoutSelectedAddress" android:orientation="vertical" android:background="#F8F9FA" android:padding="12dp" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:id="@+id/tvAddressLabel" android:text="Home" android:textStyle="bold" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/tvSelectedAddress" android:text="Select a delivery address" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <!-- No Address View -->
+                <LinearLayout android:id="@+id/layoutNoAddress" android:orientation="vertical" android:gravity="center" android:visibility="gone" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="No address saved" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <Button android:id="@+id/btnAddNewAddress" android:text="+ Add New Address" android:textColor="#12A4E8" android:backgroundTint="#E3F2FD" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Delivery Time Slot Section -->
+            <LinearLayout android:orientation="vertical" android:background="#FFFFFF" android:padding="16dp" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:text="🕐 Delivery Time Slot" android:textStyle="bold" android:textSize="16sp" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <!-- Date Selection -->
+                <TextView android:text="Select Date" android:textColor="#666666" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <RadioGroup android:id="@+id/radioGroupDate" android:orientation="horizontal" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <RadioButton android:id="@+id/radioToday" android:text="Today" android:checked="true" android:padding="8dp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+                    <RadioButton android:id="@+id/radioTomorrow" android:text="Tomorrow" android:padding="8dp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+                    <RadioButton android:id="@+id/radioDayAfter" android:text="Day After" android:padding="8dp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+                </RadioGroup>
+
+                <!-- Time Selection -->
+                <TextView android:text="Select Time" android:textColor="#666666" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <RadioGroup android:id="@+id/radioGroupTime" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <RadioButton android:id="@+id/radioMorning" android:text="🌅  Morning (6 AM - 9 AM)" android:checked="true" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <RadioButton android:id="@+id/radioAfternoon" android:text="☀️  Afternoon (12 PM - 3 PM)" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <RadioButton android:id="@+id/radioEvening" android:text="🌆  Evening (5 PM - 8 PM)" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Payment Method Section -->
+            <LinearLayout android:orientation="vertical" android:background="#FFFFFF" android:padding="16dp" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:text="💳 Payment Method" android:textStyle="bold" android:textSize="16sp" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <RadioGroup android:id="@+id/radioPaymentMethod" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <RadioButton android:id="@+id/radioCOD" android:text="💵  Cash on Delivery" android:textSize="15sp" android:padding="12dp" android:checked="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <RadioButton android:id="@+id/radioUPI" android:text="📱  UPI (GPay, PhonePe, Paytm)" android:textSize="15sp" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <RadioButton android:id="@+id/radioRazorpay" android:text="💳  Card / Net Banking / Wallet (Razorpay)" android:textSize="15sp" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Bill Summary -->
+            <LinearLayout android:orientation="vertical" android:padding="16dp" android:background="#FFFFFF" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:text="📋 Bill Summary" android:textStyle="bold" android:textSize="16sp" android:layout_marginBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="Subtotal" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvSubtotal" android:text="₹0" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout android:orientation="horizontal" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="Delivery Fee" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvDeliveryFee" android:text="FREE" android:textColor="#4CAF50" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout android:orientation="horizontal" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="Discount" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvDiscount" android:text="₹0" android:textColor="#4CAF50" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <View android:background="#E0E0E0" android:layout_marginVertical="12dp" android:layout_width="match_parent" android:layout_height="1dp"/>
+
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="Total" android:textStyle="bold" android:textSize="16sp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+                    <TextView android:id="@+id/tvTotal" android:text="₹0" android:textStyle="bold" android:textSize="16sp" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Bottom padding for scroll -->
+            <View android:layout_width="match_parent" android:layout_height="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Progress Bar -->
+    <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <!-- Sticky Place Order Button -->
+    <LinearLayout android:orientation="horizontal" android:background="#FFFFFF" android:elevation="8dp" android:padding="16dp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <!-- Total Amount Display -->
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content">
+
+            <TextView android:text="Total" android:textSize="12sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvTotalBottom" android:text="₹0" android:textSize="18sp" android:textStyle="bold" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <Button android:id="@+id/btnCheckout" android:text="Place Order" android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="bold" android:backgroundTint="#12A4E8" android:paddingHorizontal="32dp" android:layout_width="wrap_content" android:layout_height="52dp"/>
+    </LinearLayout>
+
+</LinearLayout>

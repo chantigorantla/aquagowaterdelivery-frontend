@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">896317018390</string>
+    <string name="google_api_key" translatable="false">AIzaSyBSj4xX81uomhw0jBJ8dr73vXB0lqxg2qw</string>
+    <string name="google_app_id" translatable="false">1:896317018390:android:739eb45ea5598003b14037</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBSj4xX81uomhw0jBJ8dr73vXB0lqxg2qw</string>
+    <string name="google_storage_bucket" translatable="false">aquago-7ea00.firebasestorage.app</string>
+    <string name="project_id" translatable="false">aquago-7ea00</string>
+</resources>

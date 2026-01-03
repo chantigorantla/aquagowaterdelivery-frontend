@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+
+    <!-- Water drop icon -->
+    <path android:fillColor="#FFFFFF" android:pathData="M54,18
+        C54,18 34,48 34,68
+        C34,79 43,88 54,88
+        C65,88 74,79 74,68
+        C74,48 54,18 54,18
+        Z"/>
+
+    <!-- Wave inside the drop -->
+    <path android:fillColor="#12A4E8" android:pathData="M44,68
+        Q49,63 54,68
+        Q59,73 64,68
+        L64,78
+        Q59,83 54,78
+        Q49,73 44,78
+        Z"/>
+</vector>

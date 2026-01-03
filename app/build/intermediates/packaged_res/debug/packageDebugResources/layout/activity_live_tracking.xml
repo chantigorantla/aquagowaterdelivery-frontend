@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFFFFF">
+
+    <!-- OpenStreetMap MapView -->
+    <org.osmdroid.views.MapView android:id="@+id/mapView" android:layout_width="match_parent" android:layout_height="match_parent" />
+
+    <!-- Top Overlay - Back Button -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp">
+
+        <TextView android:id="@+id/btnBack" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle_white" android:gravity="center" android:text="←" android:textColor="#333333" android:textSize="20sp" android:elevation="4dp" />
+
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+
+        <!-- Distance Pill -->
+        <LinearLayout android:id="@+id/layoutDistancePill" android:layout_width="wrap_content" android:layout_height="40dp" android:background="@drawable/bg_distance_pill" android:gravity="center" android:paddingStart="16dp" android:paddingEnd="12dp" android:elevation="4dp" android:visibility="gone">
+
+            <TextView android:id="@+id/tvDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 Km away" android:textColor="#333333" android:textSize="14sp" />
+
+            <TextView android:layout_width="24dp" android:layout_height="24dp" android:layout_marginStart="8dp" android:background="@drawable/bg_circle_red" android:gravity="center" android:text="→" android:textColor="#FFFFFF" android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom Sheet - Tracking Info -->
+    <LinearLayout android:id="@+id/layoutBottomSheet" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:background="@drawable/bg_bottom_sheet" android:orientation="vertical" android:padding="24dp" android:elevation="16dp">
+
+        <!-- Title: TRACKING -->
+        <TextView android:id="@+id/tvTrackingTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:text="TRACKING" android:textColor="#E53935" android:textSize="20sp" android:textStyle="bold" android:letterSpacing="0.15" />
+
+        <!-- Status Message -->
+        <TextView android:id="@+id/tvStatusMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="12dp" android:gravity="center" android:text="As soon as you hear the sound of the door.\nYour water has come." android:textColor="#666666" android:textSize="14sp" android:lineSpacingExtra="4dp" />
+
+        <!-- Partner Info -->
+        <LinearLayout android:id="@+id/layoutPartnerInfo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center_vertical" android:visibility="gone">
+
+            <TextView android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/bg_circle_blue" android:gravity="center" android:text="🚴" android:textSize="20sp" />
+
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="12dp" android:orientation="vertical">
+
+                <TextView android:id="@+id/tvPartnerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Delivery Partner" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" />
+
+                <TextView android:id="@+id/tvEta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ETA: ~5 mins" android:textColor="#666666" android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Confirm Button -->
+        <TextView android:id="@+id/btnConfirm" android:layout_width="56dp" android:layout_height="56dp" android:layout_gravity="center_horizontal" android:layout_marginTop="20dp" android:background="@drawable/bg_circle_red_large" android:gravity="center" android:text="✓" android:textColor="#FFFFFF" android:textSize="24sp" android:elevation="8dp" />
+
+    </LinearLayout>
+
+    <!-- Loading Overlay -->
+    <FrameLayout android:id="@+id/layoutLoading" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#80FFFFFF" android:visibility="gone">
+
+        <ProgressBar android:layout_width="48dp" android:layout_height="48dp" android:layout_gravity="center" />
+    </FrameLayout>
+
+</FrameLayout>

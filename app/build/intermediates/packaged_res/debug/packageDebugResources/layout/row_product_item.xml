@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardElevation="4dp" app:cardCornerRadius="12dp">
+
+    <LinearLayout android:padding="12dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/imgProduct" android:src="@android:drawable/ic_menu_gallery" android:scaleType="centerCrop" android:background="#E3F2FD" android:layout_width="match_parent" android:layout_height="100dp"/>
+
+        <TextView android:id="@+id/tvName" android:text="Pure Water Can" android:textStyle="bold" android:textSize="14sp" android:maxLines="1" android:ellipsize="end" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:id="@+id/tvSize" android:text="20 Liters" android:textColor="#777" android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center_vertical">
+
+            <TextView android:id="@+id/tvPrice" android:text="₹45" android:textStyle="bold" android:textSize="16sp" android:textColor="#12A4E8" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+
+            <!-- Add to Cart Button (shown when not in cart) -->
+            <Button android:id="@+id/btnAddToCart" android:text="+ Add" android:textSize="12sp" android:textColor="#FFFFFF" android:backgroundTint="#12A4E8" android:minWidth="60dp" android:minHeight="32dp" android:layout_width="wrap_content" android:layout_height="48dp"/>
+
+            <!-- Quantity Controls (shown when in cart) -->
+            <LinearLayout android:id="@+id/layoutQuantity" android:orientation="horizontal" android:gravity="center_vertical" android:visibility="gone" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="36dp">
+
+                <TextView android:id="@+id/btnMinus" android:text="−" android:textSize="18sp" android:textStyle="bold" android:textColor="#12A4E8" android:gravity="center" android:background="#E3F2FD" android:paddingHorizontal="12dp" android:layout_width="36dp" android:layout_height="36dp"/>
+
+                <TextView android:id="@+id/tvQuantity" android:text="1" android:textSize="14sp" android:textStyle="bold" android:gravity="center" android:paddingHorizontal="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <TextView android:id="@+id/btnPlus" android:text="+" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF" android:gravity="center" android:background="#12A4E8" android:paddingHorizontal="12dp" android:layout_width="36dp" android:layout_height="36dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

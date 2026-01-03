@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#F6F9FC">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="#12A4E8">
+
+        <TextView android:id="@+id/tvBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="←" android:textSize="24sp" android:textColor="#FFFFFF" android:padding="8dp"/>
+
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:text="Help &amp; Support" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+            <!-- Info Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="12dp" app:cardElevation="2dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:gravity="center">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💧" android:textSize="48sp"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="How can we help you?" android:textSize="20sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Find answers to common questions or contact us" android:textSize="14sp" android:textColor="#666666" android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FAQ Section -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:layout_marginBottom="12dp" android:text="Frequently Asked Questions" android:textSize="14sp" android:textStyle="bold" android:textColor="#12A4E8"/>
+
+            <!-- FAQ 1 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="8dp" app:cardElevation="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/faq1Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="?attr/selectableItemBackground">
+
+                        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="How do I place an order?" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:id="@+id/faq1Arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" android:textSize="12sp" android:textColor="#999999"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/faq1Content" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:padding="16dp" android:background="#F8F9FA">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Browse products from the home screen, add items to your cart, select a delivery address, choose your payment method, and confirm your order." android:textSize="13sp" android:textColor="#666666" android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FAQ 2 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="8dp" app:cardElevation="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/faq2Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="?attr/selectableItemBackground">
+
+                        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="How can I track my order?" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:id="@+id/faq2Arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" android:textSize="12sp" android:textColor="#999999"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/faq2Content" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:padding="16dp" android:background="#F8F9FA">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Go to My Orders from your profile. Tap on any order to view its current status." android:textSize="13sp" android:textColor="#666666" android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FAQ 3 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="8dp" app:cardElevation="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/faq3Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="?attr/selectableItemBackground">
+
+                        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="What payment methods are available?" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:id="@+id/faq3Arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" android:textSize="12sp" android:textColor="#999999"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/faq3Content" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:padding="16dp" android:background="#F8F9FA">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="We accept Cash on Delivery (COD) and UPI payments." android:textSize="13sp" android:textColor="#666666" android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FAQ 4 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="8dp" app:cardElevation="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/faq4Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="?attr/selectableItemBackground">
+
+                        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="How do I cancel an order?" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:id="@+id/faq4Arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" android:textSize="12sp" android:textColor="#999999"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/faq4Content" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:padding="16dp" android:background="#F8F9FA">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You can cancel pending orders from the order details page." android:textSize="13sp" android:textColor="#666666" android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- FAQ 5 -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="8dp" app:cardElevation="1dp">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <LinearLayout android:id="@+id/faq5Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="?attr/selectableItemBackground">
+
+                        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="How do I become a delivery partner?" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:id="@+id/faq5Arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="▼" android:textSize="12sp" android:textColor="#999999"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/faq5Content" android:layout_width="match_parent" android:layout_height="wrap_content" android:visibility="gone" android:padding="16dp" android:background="#F8F9FA">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Register as a partner from the apps login screen by selecting Partner mode." android:textSize="13sp" android:textColor="#666666" android:lineSpacingExtra="4dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact Section -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:text="Contact Us" android:textSize="14sp" android:textStyle="bold" android:textColor="#12A4E8"/>
+
+            <!-- Email Contact -->
+            <androidx.cardview.widget.CardView android:id="@+id/btnContactEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" app:cardCornerRadius="8dp" app:cardElevation="1dp" android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp">
+
+                    <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_bg">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="📧" android:textSize="20sp"/>
+                    </FrameLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Us" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="support@aquago.in" android:textSize="12sp" android:textColor="#12A4E8"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textSize="20sp" android:textColor="#CCCCCC"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Phone Contact -->
+            <androidx.cardview.widget.CardView android:id="@+id/btnContactPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" app:cardCornerRadius="8dp" app:cardElevation="1dp" android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp">
+
+                    <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_bg">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="📞" android:textSize="20sp"/>
+                    </FrameLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Call Us" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="+91 98765 43210" android:textSize="12sp" android:textColor="#12A4E8"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textSize="20sp" android:textColor="#CCCCCC"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Legal Section -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4dp" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:text="Legal" android:textSize="14sp" android:textStyle="bold" android:textColor="#12A4E8"/>
+
+            <!-- Privacy Policy Button -->
+            <androidx.cardview.widget.CardView android:id="@+id/btnPrivacyPolicy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:cardCornerRadius="8dp" app:cardElevation="1dp" android:foreground="?attr/selectableItemBackground">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp">
+
+                    <FrameLayout android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/settings_icon_bg">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:text="📜" android:textSize="20sp"/>
+                    </FrameLayout>
+
+                    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:layout_marginStart="16dp" android:orientation="vertical">
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Privacy Policy" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333"/>
+
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Read our privacy policy" android:textSize="12sp" android:textColor="#888888"/>
+                    </LinearLayout>
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="→" android:textSize="20sp" android:textColor="#CCCCCC"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

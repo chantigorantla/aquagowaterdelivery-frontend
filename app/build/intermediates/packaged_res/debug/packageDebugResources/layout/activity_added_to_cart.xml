@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:src="@drawable/ic_check_circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:text="Added to Cart!"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Pure Water Can (20L) × 2 has been added to your cart"
+        android:textColor="#777"
+        android:layout_marginTop="6dp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- PRODUCT CARD -->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="#F7FAFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Pure Water Can  (20L × 2)"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="₹90"
+            android:textColor="#0A9EDC"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="3 items in cart     Total: ₹180"
+        android:layout_marginTop="12dp"
+        android:textColor="#555"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- ACTION BUTTONS -->
+    <Button
+        android:id="@+id/btnContinueShopping"
+        android:text="Continue Shopping"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <Button
+        android:id="@+id/btnViewCart"
+        android:text="View Cart"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+
+
+
+</LinearLayout>

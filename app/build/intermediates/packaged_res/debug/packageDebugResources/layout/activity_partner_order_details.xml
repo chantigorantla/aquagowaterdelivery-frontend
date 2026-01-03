@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F5F5">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="#12A4E8" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tvBack" android:text="←" android:textSize="24sp" android:textColor="#FFFFFF" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <TextView android:text="Order Details" android:textSize="18sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_marginStart="12dp" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <!-- Order ID & Status Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="12dp" app:cardElevation="4dp" android:layout_marginBottom="16dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:id="@+id/tvOrderId" android:text="Order #AQ1001" android:textSize="20sp" android:textStyle="bold" android:textColor="#333333" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/tvOrderStatus" android:text="Pending" android:textSize="14sp" android:textStyle="bold" android:textColor="#FFFFFF" android:background="@drawable/status_badge_pending" android:paddingHorizontal="12dp" android:paddingVertical="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <TextView android:id="@+id/tvOrderDate" android:text="Dec 28, 2025 at 10:30 AM" android:textColor="#888888" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Customer Info Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="12dp" app:cardElevation="4dp" android:layout_marginBottom="16dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="👤 Customer Information" android:textSize="14sp" android:textStyle="bold" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/tvCustomerName" android:text="John Doe" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_marginTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/tvCustomerAddress" android:text="123 Main Street, City" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Delivery Slot Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="12dp" app:cardElevation="4dp" android:layout_marginBottom="16dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="🕐 Scheduled Delivery" android:textSize="14sp" android:textStyle="bold" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <TextView android:id="@+id/tvDeliverySlot" android:text="Today - Morning (6 AM - 9 AM)" android:textSize="16sp" android:textColor="#12A4E8" android:textStyle="bold" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Order Items Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="12dp" app:cardElevation="4dp" android:layout_marginBottom="16dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="📦 Order Items" android:textSize="14sp" android:textStyle="bold" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:id="@+id/layoutItems" android:orientation="vertical" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" android:layout_marginVertical="12dp"/>
+
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:text="Total Amount" android:textSize="16sp" android:textStyle="bold" android:textColor="#333333" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/tvOrderTotal" android:text="₹200" android:textSize="20sp" android:textStyle="bold" android:textColor="#4CAF50" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Payment Info Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="12dp" app:cardElevation="4dp" android:layout_marginBottom="16dp">
+
+                <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <TextView android:text="💳 Payment Details" android:textSize="14sp" android:textStyle="bold" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                    <LinearLayout android:orientation="horizontal" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:text="Method:" android:textColor="#888888" android:layout_width="100dp" android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/tvPaymentMethod" android:text="Cash on Delivery" android:textStyle="bold" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <LinearLayout android:orientation="horizontal" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                        <TextView android:text="Status:" android:textColor="#888888" android:layout_width="100dp" android:layout_height="wrap_content"/>
+
+                        <TextView android:id="@+id/tvPaymentStatus" android:text="Pending" android:textStyle="bold" android:textColor="#FF9800" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout android:id="@+id/layoutActions" android:orientation="vertical" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <!-- Accept/Reject Row (for pending) -->
+                <LinearLayout android:id="@+id/layoutPendingActions" android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                    <Button android:id="@+id/btnAcceptOrder" android:text="✓ Accept Order" android:textColor="#FFFFFF" android:backgroundTint="#4CAF50" android:layout_weight="1" android:layout_marginEnd="8dp" android:layout_width="0dp" android:layout_height="52dp"/>
+
+                    <Button android:id="@+id/btnRejectOrder" android:text="✗ Reject" android:textColor="#FFFFFF" android:backgroundTint="#F44336" android:layout_weight="1" android:layout_width="0dp" android:layout_height="52dp"/>
+                </LinearLayout>
+
+                <!-- Dispatch Button (for confirmed) -->
+                <Button android:id="@+id/btnDispatch" android:text="📦 Dispatch Order" android:textColor="#FFFFFF" android:backgroundTint="#2196F3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52dp"/>
+
+                <!-- Out for Delivery Button (for processing) -->
+                <Button android:id="@+id/btnOutForDelivery" android:text="🚚 Mark Out for Delivery" android:textColor="#FFFFFF" android:backgroundTint="#9C27B0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52dp"/>
+
+                <!-- Complete Button (for out_for_delivery) -->
+                <Button android:id="@+id/btnComplete" android:text="✓ Mark as Delivered" android:textColor="#FFFFFF" android:backgroundTint="#4CAF50" android:visibility="gone" android:layout_width="match_parent" android:layout_height="52dp"/>
+            </LinearLayout>
+
+            <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_gravity="center" android:layout_marginTop="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

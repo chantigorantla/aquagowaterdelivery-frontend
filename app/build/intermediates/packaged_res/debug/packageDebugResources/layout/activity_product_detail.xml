@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F5F5">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <LinearLayout android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical" android:background="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tvBack" android:text="← Back" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <View android:layout_weight="1" android:layout_width="0dp" android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <!-- Product Image -->
+        <ImageView android:id="@+id/imgProduct" android:src="@android:drawable/ic_menu_gallery" android:scaleType="centerCrop" android:background="#E0E0E0" android:layout_width="match_parent" android:layout_height="200dp"/>
+
+        <!-- Product Info -->
+        <LinearLayout android:orientation="vertical" android:padding="16dp" android:background="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:id="@+id/tvName" android:text="Water Can" android:textSize="20sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvSize" android:text="20L" android:textColor="#666666" android:layout_marginTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvPrice" android:text="₹45" android:textSize="24sp" android:textStyle="bold" android:textColor="#12A4E8" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/tvDescription" android:text="Premium quality drinking water for your home and office." android:textColor="#666666" android:layout_marginTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Quantity -->
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical" android:padding="16dp" android:background="#FFFFFF" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <TextView android:text="Quantity" android:textSize="16sp" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnDecrease" android:text="-" android:layout_width="40dp" android:layout_height="40dp"/>
+
+            <TextView android:id="@+id/tvQty" android:text="1" android:textSize="18sp" android:gravity="center" android:paddingHorizontal="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+            <Button android:id="@+id/btnIncrease" android:text="+" android:layout_width="40dp" android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <!-- Buttons -->
+        <LinearLayout android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <Button android:id="@+id/btnAddToCart" android:text="Add to Cart" android:textColor="#FFFFFF" android:backgroundTint="#12A4E8" android:layout_weight="1" android:layout_marginEnd="8dp" android:layout_width="0dp" android:layout_height="52dp"/>
+
+            <Button android:id="@+id/btnBuyNow" android:text="Buy Now" android:textColor="#12A4E8" android:layout_weight="1" android:layout_width="0dp" android:layout_height="52dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

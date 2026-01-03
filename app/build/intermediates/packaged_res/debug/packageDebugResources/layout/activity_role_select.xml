@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="#12A4E8" android:gravity="center" android:padding="24dp">
+
+    <!-- Title -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Welcome" android:textSize="22sp" android:textStyle="bold" android:textColor="#FFFFFF" android:layout_gravity="center_horizontal" />
+
+    <!-- Subtitle -->
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select your role and sign in to continue." android:textSize="14sp" android:textColor="#FFFFFF" android:layout_marginTop="12dp" android:layout_gravity="center_horizontal" />
+
+    <!-- Spacer -->
+    <View android:layout_width="match_parent" android:layout_height="30dp" />
+
+    <!-- Cards Container -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+
+        <!-- Customer Card -->
+        <LinearLayout android:id="@+id/cardCustomer" android:layout_width="150dp" android:layout_height="150dp" android:orientation="vertical" android:background="@drawable/card_white" android:gravity="center" android:padding="16dp" android:layout_marginEnd="16dp">
+
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_myplaces" app:tint="#12A4E8" />
+
+            <TextView android:text="Customer" android:textStyle="bold" android:textSize="14sp" android:layout_marginTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <TextView android:text="Order water" android:textSize="12sp" android:textColor="#666" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Partner Card -->
+        <LinearLayout android:id="@+id/cardPartner" android:layout_width="150dp" android:layout_height="150dp" android:orientation="vertical" android:background="@drawable/card_white" android:gravity="center" android:padding="16dp">
+
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@android:drawable/ic_menu_manage" app:tint="#12A4E8" />
+
+            <TextView android:text="Partner" android:textStyle="bold" android:textSize="14sp" android:layout_marginTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <TextView android:text="Deliver water" android:textSize="12sp" android:textColor="#666" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

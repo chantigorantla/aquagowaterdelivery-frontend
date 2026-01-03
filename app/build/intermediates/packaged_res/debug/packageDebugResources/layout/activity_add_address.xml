@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F5F5">
+
+    <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <!-- Back -->
+        <TextView android:id="@+id/tvBack" android:text="← Back" android:textColor="#12A4E8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Header -->
+        <TextView android:text="Add New Address" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- GPS Location Card -->
+        <androidx.cardview.widget.CardView android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <LinearLayout android:orientation="vertical" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+
+                <TextView android:text="📍 Location" android:textSize="14sp" android:textStyle="bold" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <TextView android:id="@+id/tvCurrentLocation" android:text="Tap 'Use GPS' to detect your location" android:textSize="13sp" android:textColor="#666666" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+                <Button android:id="@+id/btnUseGPS" android:text="📍 Use My Current Location" android:textColor="#FFFFFF" android:backgroundTint="#4CAF50" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="48dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Divider -->
+        <TextView android:text="— OR enter address manually —" android:textSize="12sp" android:textColor="#999999" android:gravity="center" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Label -->
+        <EditText android:id="@+id/etLabel" android:hint="Label (e.g., Home, Office)" android:inputType="text" android:background="@android:drawable/edit_text" android:padding="12dp" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Address Line -->
+        <EditText android:id="@+id/etAddressLine" android:hint="Full Address" android:inputType="textMultiLine" android:minLines="2" android:background="@android:drawable/edit_text" android:padding="12dp" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- City -->
+        <EditText android:id="@+id/etCity" android:hint="City" android:inputType="text" android:background="@android:drawable/edit_text" android:padding="12dp" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Pincode -->
+        <EditText android:id="@+id/etPincode" android:hint="Pincode" android:inputType="number" android:maxLength="6" android:background="@android:drawable/edit_text" android:padding="12dp" android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Progress -->
+        <ProgressBar android:id="@+id/progressBar" android:visibility="gone" android:layout_gravity="center" android:layout_marginTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Save Button -->
+        <Button android:id="@+id/btnSaveAddress" android:text="Save Address" android:textColor="#FFFFFF" android:backgroundTint="#12A4E8" android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="52dp"/>
+
+    </LinearLayout>
+</ScrollView>

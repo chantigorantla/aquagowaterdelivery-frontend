@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F5F5F5" android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@android:color/white" android:elevation="2dp" android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp">
+
+        <TextView android:id="@+id/tvBack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:padding="8dp" android:text="← Back" android:textColor="#12A4E8" android:textSize="16sp" />
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="Notification" android:textColor="#1A1A2E" android:textSize="18sp" android:textStyle="bold" />
+
+        <View android:layout_width="60dp" android:layout_height="1dp" />
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+            <!-- Notification Icon -->
+            <TextView android:id="@+id/tvNotificationIcon" android:layout_width="80dp" android:layout_height="80dp" android:layout_gravity="center_horizontal" android:layout_marginTop="16dp" android:background="@drawable/circle_bg_light_blue" android:gravity="center" android:text="📦" android:textSize="40sp" />
+
+            <!-- Title -->
+            <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center" android:text="Order Confirmed" android:textColor="#333333" android:textSize="22sp" android:textStyle="bold" />
+
+            <!-- Time -->
+            <TextView android:id="@+id/tvTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:text="2 hours ago" android:textColor="#999999" android:textSize="14sp" />
+
+            <!-- Message Card -->
+            <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:elevation="2dp" android:backgroundTint="@android:color/white">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Message" android:textColor="#666666" android:textSize="12sp" android:textStyle="bold" />
+
+                    <TextView android:id="@+id/tvMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:lineSpacingExtra="4dp" android:text="Your order #123 has been confirmed by AquaGo Partner. Expected delivery in 30-45 minutes." android:textColor="#333333" android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Order Details Card (visible only for order notifications) -->
+            <androidx.cardview.widget.CardView android:id="@+id/cardOrderDetails" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:elevation="2dp" android:visibility="gone" android:backgroundTint="@android:color/white">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Order Details" android:textColor="#666666" android:textSize="12sp" android:textStyle="bold" />
+
+                        <TextView android:id="@+id/tvOrderStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/status_badge_bg" android:paddingStart="12dp" android:paddingTop="4dp" android:paddingEnd="12dp" android:paddingBottom="4dp" android:text="CONFIRMED" android:textColor="#4CAF50" android:textSize="11sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:background="#EEEEEE" />
+
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Order ID" android:textColor="#999999" android:textSize="14sp" />
+
+                        <TextView android:id="@+id/tvOrderId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="#123" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <!-- Track Order Button -->
+                    <Button android:id="@+id/btnTrackOrder" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="16dp" android:background="@drawable/btn_primary1" android:text="🚚  Track Order" android:textAllCaps="false" android:textColor="@android:color/white" android:textSize="15sp" android:visibility="gone" />
+
+                    <!-- View Order Details Button -->
+                    <Button android:id="@+id/btnViewOrder" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="8dp" android:background="@drawable/btn_outline" android:text="View Order Details" android:textAllCaps="false" android:textColor="#12A4E8" android:textSize="15sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Action Card for other notification types -->
+            <androidx.cardview.widget.CardView android:id="@+id/cardAction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:elevation="2dp" android:visibility="gone" android:backgroundTint="@android:color/white">
+
+                <Button android:id="@+id/btnAction" android:layout_width="match_parent" android:layout_height="48dp" android:layout_margin="16dp" android:background="@drawable/btn_primary1" android:text="Take Action" android:textAllCaps="false" android:textColor="@android:color/white" android:textSize="15sp" />
+            </androidx.cardview.widget.CardView>
+
+            <View android:layout_width="match_parent" android:layout_height="32dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
